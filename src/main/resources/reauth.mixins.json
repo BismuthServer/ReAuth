@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_8",
+	"package": "technicianlp.reauth.mixin",
+	"client": [
+		"MixinMinecraft",
+		"MixinGuiScreen",
+		"MixinGuiMultiplayer",
+		"MixinGuiMainMenu"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

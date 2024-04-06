@@ -1,30 +1,31 @@
 {
 	"schemaVersion": 1,
-	"id": "example_mod",
+	"id": "reauth",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "ReAuth",
+	"description": "A mod to renew your Session and switch accounts",
 	"authors": [
-		"Me!"
+    "TechnicianLP",
+    "Earthcomputer",
+    "NoaQT",
+    "dragonbabyfly"
 	],
 	"contact": {
-		"homepage": "https://example.com/",
-		"sources": "https://github.com/OrnitheMC/ornithe-template-mod"
+		"homepage": "https://github.com/BismuthServer/ReAuth",
+		"sources": "https://github.com/BismuthServer/ReAuth"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/example_mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"init": [
-			"com.example.example_mod.ExampleMod"
+			"technicianlp.reauth.ReAuth"
 		]
 	},
 	"mixins": [
-		"example_mod.mixins.json"
+		"reauth.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",
-		"minecraft": "1.7.2",
+		"minecraft": "1.12.2",
 		"osl-entrypoints": ">=0.4.0"
 	}
 }
