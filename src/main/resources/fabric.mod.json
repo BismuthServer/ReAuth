@@ -14,7 +14,7 @@
 		"homepage": "https://github.com/BismuthServer/ReAuth",
 		"sources": "https://github.com/BismuthServer/ReAuth"
 	},
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"init": [
 			"technicianlp.reauth.ReAuth"
