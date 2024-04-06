@@ -1,7 +1,5 @@
 package technicianlp.reauth.configuration;
 
-import com.google.gson.annotations.Expose;
-import net.minecraft.client.resource.language.I18n;
 import net.ornithemc.osl.config.api.ConfigManager;
 import net.ornithemc.osl.config.api.ConfigScope;
 import net.ornithemc.osl.config.api.LoadingPhase;

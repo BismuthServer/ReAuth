@@ -15,6 +15,7 @@ import technicianlp.reauth.configuration.ProfileListOption;
 import technicianlp.reauth.mojangfix.MojangJavaFix;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -58,7 +59,7 @@ public class ReAuth implements ModInitializer {
 
 			@Override
 			public void deserialize(ProfileListOption option, SerializationSettings settings, JsonFile json) throws IOException {
-				List<Profile> profileList = option.get();
+				ArrayList<Profile> profileList = new ArrayList<>();
 
 				json.readArray(jsonArray -> {
 					if (jsonArray.hasNext()) {
@@ -76,6 +77,7 @@ public class ReAuth implements ModInitializer {
 						});
 					}
 				});
+				option.set(profileList);
 			}
 		});
 	}
